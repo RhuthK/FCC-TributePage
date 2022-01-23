@@ -1,40 +1,70 @@
 *{
     margin: 0;
+    z-index: -1;
     font-family: 'Lato', sans-serif;
+    
     
 }
 .container {
-    background-color: black;
-    border: 1px solid orange;
+    z-index:-1;
+    position: fixed;
+    color: black;
+    background-color:rgb(168, 182, 168);
+    /* border: 1px solid orange; */
     display: grid;
-    position: absolute;
-    width: 100%;
+    
+    margin-left: 15%;
+    width: 70%;
     height: 100vh;
-    grid-row: 100px 100px 100px;
+    grid-row: 1fr 2fr 4fr;
     grid-row-gap: 10px;
     justify-items: center;
+    margin-top: 1rem;
+    
 }
 .child1{
-    border: 3px solid rgb(30, 255, 218);
-    width: 100%;
+    z-index: 100;
+    /* border: 3px solid rgb(30, 255, 218); */
+    width: 100vh;
     text-align: center;
-    height: 40%;
+    height: 30%;
     font-weight: 300;
-    font-size: 90px;
-    color: white;
+    font-size: 4rem;
+    /* color: white; */
     padding: 10px;
 }
 .child1 h3{
-    color: white;
+    z-index: 100;
+    /* color: white; */
     font-weight:100 ;
     font-size: 1.5rem;
     margin-top: 0%;
 }
 .child2{
-    border: 3px solid green;
-    
+    z-index: 100;
+    background-color: rgb(147, 160, 147);
+    margin-top: -200px;
+    height:93%;
+    /* border: 3px solid green; */
+    width: 100vh;
+    padding: 15px;
+}
+.child2 img{
+    z-index: 100;
+    margin-left: 15%;
+    height: 400px;
+    border:3px solid white;
+}
+.child2 p{
+    z-index: 100;
+    /* color: white; */
+    text-align: center;
+    font-size: medium;
 }
 .child3{
+    z-index: 100;
+    margin-top: -150px;
     border: 3px solid orange;
+    height: 900;
     
 }
